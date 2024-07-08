@@ -1,0 +1,167 @@
+*{
+    font-family:'Inter', sans-serif;
+    padding: 0;
+    margin: 0;
+
+}
+
+body{
+    background: #dbd8d6;
+}
+
+/* HEADER */
+
+
+.header{
+   width: 90%;
+   margin: auto;
+   background-color: red;
+}
+
+.header .logo{
+    margin-top: 40px;
+}
+
+/* PARTE MAIN */
+
+.main{
+   width: 80%;
+   margin: auto 40px auto auto;
+   display: grid;
+   min-height: calc(100vh - 91px - 72px );
+   grid-template-columns: 2fr 1fr;
+   align-items: end;
+}
+
+.cont-side-I{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.texto{
+    width: 80%;
+    font-size: 32px;
+    background:#dbd8d6;
+    border: none;
+    outline: none;
+    resize: none;
+   
+}
+
+.texto::placeholder{
+    color:#561F37;
+}
+
+.I-side{
+
+}
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;    
+    margin-top: 16px;
+}
+
+.btnE{
+    width: 40%;
+    max-width: 327px;
+    min-width: 160px;
+    height: 67px;
+    background: #561F37;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 24px;
+    border: none;
+}
+
+.btnD{
+    width: 40%;
+    height: 67px;
+    background:#dbd8d6;
+    color: #fff;
+    font-size: 16px;
+    color: #561F37;
+    border-radius: 24px;
+    border: 2px solid #561F37;
+}
+.cont-side-D{
+    height: calc(100% + 48px);
+    background: #fff;
+    border-radius: 32px;
+    padding: 90px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+}
+
+.persona-info{
+    width: 100%;
+}
+
+.btncopiar{
+    min-width: 160px;
+    max-width: 327px;
+    width: 100%;
+    height: 68px;
+    background:#fff;
+    font-size: 16px;
+    color: #561F37;
+    border-radius: 24px;
+    border: 2px solid #561F37;
+}
+
+.oculto{
+    display:none ;
+}
+
+/* footer{
+    height: 50px;
+} */
+
+@media screen and (max-width: 800px){
+    .main{
+        grid-template-columns:1fr ;
+        width: auto;
+        margin: auto 40px;
+    }
+
+    .persona-info{
+        display: none;
+    }
+
+    .cont-side-D{
+        height: 100%;
+    }
+
+    .buttons{
+        justify-content: center;
+    }
+
+    .btnE{
+        width: 46%;
+    }
+    .btnD{
+        width: 46%;
+    }
+}
+
+@media screen and (max-width:500px){
+
+    .main{
+        margin: auto 16px;
+    }
+
+    .btnE{
+        width: 100%;
+        max-width: none;
+    }
+    .btnD{
+        width: 100%;
+        max-width: none;
+    }
+}

@@ -3,9 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+    </style>
     <title>Encriptador</title>
 </head>
 <body>
-    
+    <header>
+        <div class="header">
+            <img class="logo" src="./images/Logo.png" alt="">
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <div class="cont-side-I">
+                <textarea  class="texto" name="" id="" placeholder="Ingrese el texto aqui"></textarea>
+                    <div class="I-side">
+                        <img src="./images/info.png" alt="">
+                        <span>Solo letras minúsculas y sin acentos</span>
+                        <div class="buttons">
+                            <button class="btnE">Encriptar</button>
+                            <button class="btnD">Desencriptar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cont-side-D">
+                    <img class="persona-info" src="./images/not-found.png" alt="">
+                    <!-- <div> -->
+                        <p>Ningún mensaje fue encontrado</p>
+                        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                    <!-- </div> -->
+                    <button class="btncopiar oculto">Copiar</button>
+                </div>
+        </div>
+    </main>
+    <!-- <footer>
+
+    </footer> -->
 </body>
 </html>
