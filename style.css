@@ -152,7 +152,7 @@ body{
     text-align: center;
     color: #495057;
     position: relative;
-    bottom: 16%;
+    bottom: 12%;
     
 }
 .btncopiar{
@@ -170,9 +170,7 @@ body{
 
 
 
-/* footer{
-    height: 50px;
-} */
+
 
 @media screen and (max-width: 800px){
     .main{
