@@ -18,27 +18,27 @@
     <main>
         <div class="main">
             <div class="cont-side-I">
-                <textarea  class="texto" name="" id="" placeholder="Ingrese el texto aqui"></textarea>
+                <textarea  class="texto" name="" id="ingresarTexto" placeholder="Ingrese el texto aquí"></textarea>
                     <div class="I-side">
                         <img src="./images/info.png" alt="">
                         <span>Solo letras minúsculas y sin acentos</span>
                         <div class="buttons">
-                            <button class="btnE">Encriptar</button>
-                            <button class="btnD">Desencriptar</button>
+                            <button class="btnE" id="btnEncriptar">Encriptar</button>
+                            <button class="btnD" id="btnDesencriptar">Desencriptar</button>
                         </div>
                     </div>
                 </div>
 
-                <div class="cont-side-D">
-                    <img class="persona-info" src="./images/not-found.png" alt="">
-                    <!-- <div> -->
-                        <p>Ningún mensaje fue encontrado</p>
-                        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
-                    <!-- </div> -->
-                    <button class="btncopiar oculto">Copiar</button>
+                <div class="cont-side-D ajustes">
+                        <img class="persona-info" src="./images/not-found.png" alt="alura-notfound" id="personaInfo"> 
+                        <textarea class="msj-info" id="mensajeFinal" placeholder="Ningún mensaje fue encontrado"></textarea>
+                        <p class="msj-info2" id="mensajeFinal2">Ingresa el texto que desees encriptar o desencriptar.</p> 
+                    <button class="btncopiar oculto" id="btnCopiar">Copiar</button>
                 </div>
         </div>
     </main>
+
+    <script src="script.js"></script>
     <!-- <footer>
 
     </footer> -->

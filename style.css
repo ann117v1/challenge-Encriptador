@@ -15,11 +15,13 @@ body{
 .header{
    width: 90%;
    margin: auto;
-   background-color: red;
+   
 }
 
 .header .logo{
     margin-top: 40px;
+    filter: invert(15%) sepia(100%) saturate(400%) hue-rotate(300deg) brightness(60%) contrast(120%);
+
 }
 
 /* PARTE MAIN */
@@ -45,8 +47,9 @@ body{
     font-size: 32px;
     background:#dbd8d6;
     border: none;
-    outline: none;
     resize: none;
+    outline: none;
+    color: #561F37;
    
 }
 
@@ -54,8 +57,9 @@ body{
     color:#561F37;
 }
 
-.I-side{
-
+.I-side span{
+    color: #495057;
+  
 }
 
 .buttons{
@@ -75,10 +79,13 @@ body{
     font-size: 16px;
     border-radius: 24px;
     border: none;
+    cursor: pointer;
 }
 
 .btnD{
     width: 40%;
+    max-width: 327px;
+    min-width: 160px;
     height: 67px;
     background:#dbd8d6;
     color: #fff;
@@ -86,7 +93,15 @@ body{
     color: #561F37;
     border-radius: 24px;
     border: 2px solid #561F37;
+    cursor: pointer;
 }
+
+ .cont-side-D.ajustes{
+    justify-content: space-between;
+}
+
+
+
 .cont-side-D{
     height: calc(100% + 48px);
     background: #fff;
@@ -97,12 +112,49 @@ body{
     flex-direction: column;
     justify-content: center;
     gap: 32px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .persona-info{
     width: 100%;
 }
 
+.oculto{
+    display:none ;
+}
+
+.msj-info.ajustes{
+    text-align: left;
+    height: 80%;
+    font-weight: 400;
+    
+}
+
+.msj-info{
+    background: none;
+    border: none;
+    overflow: none;
+    outline: none;
+    resize: none;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  
+}
+
+.msj-info::placeholder{
+    color: #000;
+}
+
+.msj-info2{
+    font-size: 16px;
+    text-align: center;
+    color: #495057;
+    position: relative;
+    bottom: 16%;
+    
+}
 .btncopiar{
     min-width: 160px;
     max-width: 327px;
@@ -113,11 +165,10 @@ body{
     color: #561F37;
     border-radius: 24px;
     border: 2px solid #561F37;
+    cursor: pointer;
 }
 
-.oculto{
-    display:none ;
-}
+
 
 /* footer{
     height: 50px;
@@ -126,6 +177,7 @@ body{
 @media screen and (max-width: 800px){
     .main{
         grid-template-columns:1fr ;
+        grid-template-rows: 70% auto;
         width: auto;
         margin: auto 40px;
     }
@@ -155,6 +207,7 @@ body{
     .main{
         margin: auto 16px;
     }
+
 
     .btnE{
         width: 100%;
