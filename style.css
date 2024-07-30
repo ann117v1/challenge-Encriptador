@@ -224,22 +224,16 @@ video {
     }
 }
 
-@media screen and (max-width:460px){
+/* RESPONSIVE MOVIL */
+@media screen and (max-width:520px){
 
     .main{
         margin: auto 16px;
     }
 
-    .cont-side-D{
-        margin-bottom: 46px;
-        
-    }
-
     .buttons{
         display: flex;
         justify-content: space-between;
-        height: 100%;
-        width:80%;
     }
     .btnE{
         width: 100%;
@@ -250,31 +244,25 @@ video {
         max-width: none;
     }
 
-
+    .btncopiar{
+        margin-bottom: -15px;
+    }
 }
 
- @media screen and (max-width:330px){
-
-
-    .buttons{
-        margin-left: 10%;
-        width:75%;
-        padding-bottom: 6px;
-        
-        
+@media screen and (max-width:450px) {
+    .main{
+        margin: auto;
     }
-   .cont-side-I{
-    height: 80%;
-    margin-bottom: 20%;
+
+   .buttons{
+    width: 100vw;
    }
-   
-   .cont-side-D.ajustes{
-    width: 320px;
-    
+
+   .cont-side-D{
+    width: 100vw;
    }
-} 
 
-/* Responsive movil */
-
-
-
+   .cont-side-D p{
+    display: none;
+   }
+}
