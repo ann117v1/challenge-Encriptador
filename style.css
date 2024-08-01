@@ -1,20 +1,21 @@
-
 *{
     font-family:'Inter', sans-serif;
     padding: 0;
     margin: 0;
+   
 
 }
 
 body{
     background: #dbd8d6;
+
 }
 
 
 .video-container {
     position: relative;
-    height: 100vh;
-    width: 100%;
+    min-height:100vh;
+    width: 100vw;
     overflow: hidden;
 }
 
@@ -22,9 +23,10 @@ video {
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
     z-index: -1;
 }
 /* HEADER */
@@ -51,6 +53,7 @@ video {
    min-height: calc(100vh - 91px - 72px );
    grid-template-columns: 2fr 1fr;
    align-items: end;
+   z-index: 1;
 }
 
 .cont-side-I{
@@ -192,77 +195,63 @@ video {
     cursor: pointer;
 }
 
-
-
-
-
-@media screen and (max-width: 800px){
-    .main{
-        grid-template-columns:1fr ;
-        grid-template-rows: 70% auto;
+@media screen and (max-width:900px){
+     .main{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
         width: auto;
-        margin: auto 40px;
-    }
+        height: auto;
+        margin: auto 70px;
+        
+     }
 
-    .persona-info{
+    
+     .persona-info{
         display: none;
-    }
+        
+     }
 
-    .cont-side-D{
-        height: 100%;
-    }
+     .cont-side-D{
+        height: 90%;
+     }
 
-    .buttons{
+     .buttons{
         justify-content: center;
-    }
+     }
 
-    .btnE{
-        width: 46%;
-    }
-    .btnD{
-        width: 46%;
-    }
+     .btncopiar{
+        padding: 10px;
+     }
 }
 
-/* RESPONSIVE MOVIL */
-@media screen and (max-width:520px){
-
-    .main{
-        margin: auto 16px;
-    }
-
-    .buttons{
-        display: flex;
-        justify-content: space-between;
-    }
-    .btnE{
-        width: 100%;
-        max-width: none;
-    }
-    .btnD{
-        width: 100%;
-        max-width: none;
-    }
-
-    .btncopiar{
-        margin-bottom: -15px;
-    }
-}
-
-@media screen and (max-width:450px) {
+@media screen and (max-width:580px){
     .main{
         margin: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        gap: 1rem;
+        
     }
 
-   .buttons{
-    width: 100vw;
-   }
+    .logo{
+       position: relative;
+       right: 10%;
+       padding-bottom: 10px;
+    }
 
-   .cont-side-D{
-    width: 100vw;
-   }
+    .texto{
+        padding-bottom: 40%;
+    }
+    .buttons {
+        display: flex;
+        flex-wrap: wrap; 
+        gap: 16px;
+        
+        
+    }
 
-   .cont-side-D p{
-    display: none;
-   }
+
 }
