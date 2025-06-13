@@ -1,9 +1,4 @@
 # challenge-Encriptador
-
-Claro, aquí tienes una descripción de un proyecto sobre encriptación y desencriptación de texto para Alura que puedes colocar en tu archivo README:
-
----
-
 # Proyecto de Encriptación y Desencriptación de Texto
 
 ## Descripción
